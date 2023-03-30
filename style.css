@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Lexend Deca", sans-serif, cursive;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    height: 50vh;
+    width: 96vw;
+    justify-content: space-around;
+    position: relative;
+}
+
+h2 {
+    color: hsl(300, 24%, 96%);
+    position: relative;
+    bottom: 3.4rem;
+    left: 5rem;
+    font-size: 1.1rem;
+    width: 12vw;
+}
+
+p {
+    position: relative;
+}
+
+.superior {
+    align-items: center;
+    bottom: 6vh;
+}
+
+.inferior {
+    bottom: 9vh;
+    right: 2rem;
+}
+
+.caixaesquerda {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.caixadireita {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;    
+    margin-left: 2rem;
+
+}
+
+.tituloprincipal {
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    height: 30vh;
+    width: 40vw;
+}
+
+.paragrafotitulo {
+    color: hsl(303, 10%, 53%);
+    font-size: 1rem;
+    font-weight: 100;
+    width: 37vw;
+}
+
+.comentario {
+    background-color: hsl(300, 43%, 22%);
+    margin: 1rem;
+    border-radius: 10px;
+    height: 35vh;
+    width: 26vw;
+    position: relative;
+}
+
+.comentario.comentario1 {
+    top: 2rem;
+    left: 2rem;
+}
+
+.comentario.comentario2 {
+    top: 3rem;
+}
+
+.comentario.comentario3 {
+    top: 4rem;
+    right: 2rem;
+}
+
+.paragrafocomentario {
+    color: hsl(300, 24%, 96%);
+    padding: 1rem;
+    font-weight: 1;
+    font-family: cursive;
+    font-size: 1rem;
+    bottom: 4.3rem;
+    word-wrap: break-word;
+}
+
+.content {
+    margin: 1rem;
+    overflow-wrap: break-word;
+}
+
+.subtitulo {
+    color: hsl(333, 80%, 67%);
+    font-size: 0.7rem;
+    bottom: 4rem;
+    left: 5rem;
+}
+
+.frases {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 3vh;
+    position: relative;
+    background-color: hsl(300, 31%, 93%);
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.frase1 {
+    right: 6rem;
+    top: 2rem;
+    padding: 1rem;
+}
+
+.frase2 {
+    right: 3.5rem;
+    top: 2rem;
+    padding: 1rem;
+}
+
+.frase3 {
+    right: 1rem;
+    top: 2em;
+    padding: 1rem;
+
+}
+
+.fotos {
+    border-radius: 50px;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+}
+
+
+@media screen and (max-width: 1020px) {
+    section {
+        height: 50vh;
+        width: 96vw;
+        position: relative;
+    }
+
+    .caixadireita {
+        width: 45vw;
+        left: 10vw;
+        padding: 0;
+        margin-right: 0;
+    }
+    
+    .frases {
+        font-size: 0.8rem;
+    }
+
+    .tituloprincipal {
+        font-size: 2.7rem;
+    }
+
+    .fotos {
+        margin-left: 1.7rem;
+    }
+
+    h2 {
+        width: 20vw;
+        left: 3.8rem;
+    }
+
+    .subtitulo {
+        left: 3.8rem;
+    }
+
+    .paragrafocomentario {
+        font-size: 0.8rem;
+        bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        align-items: center;
+        overflow: scroll;
+        overflow-wrap: break-word;
+        display: flex;
+        width: 100vw;
+        height: 260vh;
+    }
+
+    section {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .superior {
+        margin-left: 1rem;
+        bottom: 46rem;
+        left: 1.3rem;
+        right: 2rem;
+        height: 95vh;
+        width: 77vh;
+        margin-right: 3vw;
+        position: relative;
+    }
+
+    .caixaesquerda {
+        width: 90vw;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-top: 0;
+        top: 10rem;
+        right: 1.5rem;
+        position: relative;
+    }
+
+    .tituloprincipal {
+        width: 90vw;
+        height: 30vh;
+        font-size: 6vh;
+        top: 5rem;
+        left: 2rem;
+        bottom: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .paragrafotitulo {
+        width: 90vw;
+        font-size: 1.1rem;
+        left: 0rem;
+        right: 1rem;
+        top: 1.5rem;
+    }
+
+    .caixadireita {
+        margin-left: 0;
+        width: 80vw;
+        text-align: center;
+        right: 3rem;
+        bottom: 2rem;
+    }
+
+    .frases {
+        width: 85vw;
+        right: 2.3rem;
+        bottom: 2rem;
+        font-size: 0.8rem;
+        top: 12rem;
+    }
+
+    .inferior {
+        right: 95vw;
+        top: 40vh;
+        margin: 0;
+    }
+
+    .comentario {
+        height: 45vh;
+        width: 85vw;
+        top: 3rem;
+        left: 0rem;
+        right: 0rem;
+    }
+
+    .comentario.comentario1 {
+        left: 0;
+    }
+
+    .paragrafocomentario {
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    
+    h2 {
+        width: 45vw;
+    }
+}
